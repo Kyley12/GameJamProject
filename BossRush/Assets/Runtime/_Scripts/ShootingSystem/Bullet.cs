@@ -10,13 +10,18 @@ public class Bullet : MonoBehaviour
     public float timer;
 
     private Rigidbody bulletRb;
+    private Vector3 shootingDirection;
     
+
+    private void Awake()
+    {
+        bulletRb = GetComponent<Rigidbody>();
+    }
+
 
     private void Start()
     {
-        bulletRb = GetComponent<Rigidbody>();
-
-        bulletRb.velocity = transform.forward * moveSpeed;
+        bulletRb.velocity = shootingDirection.normalized * moveSpeed;
     }
 
     private void Update()
@@ -27,5 +32,10 @@ public class Bullet : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    public void SetDirection(Vector3 direction)
+    {
+        shootingDirection = direction;
     }
 }
