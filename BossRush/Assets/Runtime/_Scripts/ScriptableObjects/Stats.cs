@@ -11,7 +11,7 @@ public class Stats : ScriptableObject
         return stats.Find(stat => stat.name == name);
     }
 
-    public void AddStats(string name, float value)
+    public void AddStats(string name, float value, float maxValue)
     {
         if(GetStats(name) != null)
         {
@@ -20,8 +20,8 @@ public class Stats : ScriptableObject
         }
         else
         {
-            stats.Add(new StatsInfo(name, value));
-            Debug.Log($"Successfully added stat with name: {name} with value: {value}!");
+            stats.Add(new StatsInfo(name, value, maxValue));
+            Debug.Log($"Successfully added stat with name: {name} with value: {value} with max value: {maxValue}!");
         }
     }
 
@@ -38,6 +38,21 @@ public class Stats : ScriptableObject
             Debug.LogWarning($"Stat with name: {name} not found!");
         }
     }
+
+    public void ModifyStats(string name, float value)
+    {
+        StatsInfo currStat = GetStats(name);
+
+        if(currStat != null)
+        {
+            currStat.value = Mathf.Clamp(value , 0f, currStat.maxValue);
+            Debug.Log($"Stat with name: {name}'s value has been modified into {currStat.value}");
+        }
+        else
+        {
+            Debug.LogError($"Stat with name {name} not found!");
+        }
+    }
 }
 
 [System.Serializable]
@@ -45,10 +60,12 @@ public class StatsInfo
 {
     public string name;
     public float value;
+    public float maxValue;
 
-    public StatsInfo(string name, float value)
+    public StatsInfo(string name, float value, float maxValue)
     {
         this.name = name;
         this.value = value;
+        this.maxValue = maxValue;
     }
 }

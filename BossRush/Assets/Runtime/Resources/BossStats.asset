@@ -15,3 +15,4 @@ MonoBehaviour:
   stats:
   - name: Health
     value: 1000
+    maxValue: 1000

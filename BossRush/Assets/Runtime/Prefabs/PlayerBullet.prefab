@@ -146,5 +146,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d17101f5ab0c8141a4d677d145b0672, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 15
-  timer: 0
+  playerStats: {fileID: 11400000, guid: 9455e558bfdfd774a85590da8e4779bf, type: 2}
+  bossStats: {fileID: 11400000, guid: 3ee07766e48e96746beb2cb22289dedd, type: 2}
+  moveSpeed: 25
+  isPlayer: 1
+  bossHealth:
+    name: 
+    value: 0
+    maxValue: 0
+  playerAttack:
+    name: 
+    value: 0
+    maxValue: 0
