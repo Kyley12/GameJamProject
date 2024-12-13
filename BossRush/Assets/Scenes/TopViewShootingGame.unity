@@ -168,6 +168,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerTransform: {fileID: 816809898629373967, guid: c05bf41a8dbac1947bc5836d228b9fe2, type: 3}
   bossTransform: {fileID: 4629124840195433538, guid: 779bc3c0a2e12ad42ab4f51bc08c841f, type: 3}
+  playerStats: {fileID: 11400000, guid: 9455e558bfdfd774a85590da8e4779bf, type: 2}
+  enemyStats: {fileID: 11400000, guid: 3ee07766e48e96746beb2cb22289dedd, type: 2}
 --- !u!1 &343344630
 GameObject:
   m_ObjectHideFlags: 0
