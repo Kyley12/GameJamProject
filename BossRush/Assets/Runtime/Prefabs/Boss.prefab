@@ -356,6 +356,8 @@ MonoBehaviour:
   - {x: 0, y: 0.5, z: 10}
   - {x: 5, y: 0.5, z: 9}
   - {x: -5, y: 0.5, z: 9}
+  playerTransform: {fileID: 816809898629373967, guid: c05bf41a8dbac1947bc5836d228b9fe2, type: 3}
+  projectilePrefab: {fileID: 3298106412621047770, guid: 1bec29d0887b1d04cbad271430cfd819, type: 3}
 --- !u!65 &5474688725113479016
 BoxCollider:
   m_ObjectHideFlags: 0

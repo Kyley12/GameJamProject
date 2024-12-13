@@ -13,10 +13,10 @@ GameObject:
   - component: {fileID: 2917365444804769659}
   - component: {fileID: 3926701005434397635}
   - component: {fileID: 7026019170370697056}
-  - component: {fileID: 7036543693507995998}
+  - component: {fileID: 4806413121131358988}
   m_Layer: 0
-  m_Name: PlayerBullet
-  m_TagString: PlayerBullet
+  m_Name: EnemyBullet
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -64,7 +64,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2b38871830b6aa24681a957273c42c60, type: 2}
+  - {fileID: 2100000, guid: f151a9bd50ca21e4fb34ae1bb252a5aa, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -134,7 +134,7 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 1
---- !u!114 &7036543693507995998
+--- !u!114 &4806413121131358988
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -143,17 +143,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 3298106412621047770}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d17101f5ab0c8141a4d677d145b0672, type: 3}
+  m_Script: {fileID: 11500000, guid: e8dc1940adaa98f43b6bcd9137c5c289, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerStats: {fileID: 11400000, guid: 9455e558bfdfd774a85590da8e4779bf, type: 2}
   bossStats: {fileID: 11400000, guid: 3ee07766e48e96746beb2cb22289dedd, type: 2}
-  moveSpeed: 25
-  bossHealth:
+  playerHealth:
     name: 
     value: 0
     maxValue: 0
-  playerDamage:
+  bossDamage:
     name: 
     value: 0
     maxValue: 0

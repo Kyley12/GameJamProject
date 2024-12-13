@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
-public class Bullet : MonoBehaviour
+public class PlayerBullet : MonoBehaviour
 {
     [Header("References")]
     public Stats playerStats;
@@ -11,9 +11,6 @@ public class Bullet : MonoBehaviour
 
     [Header("Bullet speed")]
     public float moveSpeed = 25f;
-
-    [Header("Who am I")]
-    public bool isPlayer = true;
     
     [Header("Health")]
     public StatsInfo bossHealth;
@@ -52,34 +49,20 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(isPlayer)
+        if(other.CompareTag("Enemy"))
         {
-            if(other.CompareTag("Enemy"))
-            {
-                TakeDamage();
-                Destroy(gameObject);
-            }
+            TakeDamage();
+            Destroy(gameObject);
         }
-        else
+        else if(other.CompareTag("Bullet"))
         {
-            if(other.CompareTag("Player"))
-            {
-                TakeDamage();
-                Destroy(gameObject);
-            }
+            Destroy(gameObject);
         }
     }
 
     private void TakeDamage()
     {
-        if(isPlayer)
-        {
-            bossHealth.value -= playerDamage.value;
-            bossStats.ModifyStats("Health", bossHealth.value);
-        }
-        else
-        {
-            playerStats.ModifyStats("Health", -10f);
-        }
+        bossHealth.value -= playerDamage.value;
+        bossStats.ModifyStats("Health", bossHealth.value);
     }
 }

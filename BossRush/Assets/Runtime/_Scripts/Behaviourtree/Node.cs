@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
 
 namespace BehaviourTree
 {
@@ -22,19 +23,11 @@ namespace BehaviourTree
         public Node()
         {
             parent = null;
+            children = new List<Node>();
         }
         public Node(List<Node> children)
         {
-            foreach(Node child in children)
-            {
-                _Attatch(child);
-            }
-        }
-
-        private void _Attatch(Node node)
-        {
-            node.parent = this;
-            children.Add(node);
+            this.children = children;
         }
 
         public virtual NodeState Evalutate() => NodeState.Failure;

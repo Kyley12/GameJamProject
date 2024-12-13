@@ -16,3 +16,6 @@ MonoBehaviour:
   - name: Health
     value: 1000
     maxValue: 1000
+  - name: Damage
+    value: 30
+    maxValue: 30

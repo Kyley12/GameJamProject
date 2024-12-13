@@ -26,7 +26,7 @@ public class ShootingSystem : MonoBehaviour
         GameObject bulletInstance = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
 
         // Pass the direction to the bullet
-        Bullet bullet = bulletInstance.GetComponent<Bullet>();
+        PlayerBullet bullet = bulletInstance.GetComponent<PlayerBullet>();
         if (bullet != null)
         {
             bullet.SetDirection(shootDirection);
