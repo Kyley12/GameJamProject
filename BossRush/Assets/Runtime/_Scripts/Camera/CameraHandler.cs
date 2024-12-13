@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Codice.Client.Common.GameUI;
 using UnityEngine;
 
-public class Camera : MonoBehaviour
+public class CameraHandler : MonoBehaviour
 {
     public Transform playerTransform;
     private void Start()
