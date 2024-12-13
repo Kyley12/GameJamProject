@@ -125,9 +125,10 @@ GameObject:
   - component: {fileID: 816809898629373967}
   - component: {fileID: 6985358882830018713}
   - component: {fileID: 8349763856731358294}
+  - component: {fileID: 8727618408832660009}
   - component: {fileID: 1943663140483981637}
   m_Layer: 0
-  m_Name: Player
+  m_Name: ShooterPlayer
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -192,6 +193,21 @@ MonoBehaviour:
   moveSpeed: 10
   rb: {fileID: 6985358882830018713}
   gunPosition: {fileID: 4490307677676987973}
+--- !u!114 &8727618408832660009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7966823308087829129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4da649f708cea74449400bfcf7d435c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 3298106412621047770, guid: e24e7d20f2632774a8b4db81627ac28b, type: 3}
+  firePoint: {fileID: 4490307677676987973}
+  fireCooldown: 0.5
 --- !u!65 &1943663140483981637
 BoxCollider:
   m_ObjectHideFlags: 0

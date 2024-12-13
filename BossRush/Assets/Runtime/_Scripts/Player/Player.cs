@@ -9,7 +9,6 @@ public class Player : MonoBehaviour
 
     [Header("References")]
     public Rigidbody rb;
-    public Transform gunPosition;
 
     [Header("Inputs")]
     private float horizontalInput;
