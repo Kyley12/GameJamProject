@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stats:
   - name: Health
-    value: 0
+    value: 1000
     maxValue: 1000
