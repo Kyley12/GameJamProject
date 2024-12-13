@@ -33,7 +33,7 @@ namespace Boss
             // Fire projectile at the player
             Vector3 direction = (_playerTransform.position - _bossTransform.position).normalized;
             GameObject projectile = Object.Instantiate(_projectilePrefab, _bossTransform.position, Quaternion.identity);
-            projectile.GetComponent<Rigidbody>().velocity = direction * 10f; // Adjust speed
+            projectile.GetComponent<Rigidbody>().velocity = direction * BossAI.projectileSpeed; // Adjust speed
 
             Debug.Log("Fired projectile!");
 

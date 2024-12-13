@@ -7,7 +7,9 @@ namespace Boss
     public class BossAI : TreeTrunk
     {
         public Vector3[] waypoints;
-        public static float moveSpeed = 5f;
+        public static float moveSpeed = 7f;
+        public static float projectileSpeed = 25f;
+
 
         [SerializeField] private Transform playerTransform;
         [SerializeField] private GameObject projectilePrefab;

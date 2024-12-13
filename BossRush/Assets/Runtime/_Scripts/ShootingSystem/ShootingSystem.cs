@@ -7,6 +7,7 @@ public class ShootingSystem : MonoBehaviour
     public GameObject bulletPrefab; // Bullet prefab
     public Transform firePoint;     // Point where the bullet is spawned
     public float fireCooldown = 3f; // Cooldown time between shots
+    public bool isCharged;
 
     private float nextFireTime = 0f;
 

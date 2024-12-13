@@ -10,7 +10,7 @@ public class PlayerBullet : MonoBehaviour
     private Vector3 shootingDirection;
 
     [Header("Bullet speed")]
-    public float moveSpeed = 25f;
+    public float moveSpeed = 30f;
     
     [Header("Health")]
     public StatsInfo bossHealth;

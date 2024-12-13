@@ -29,7 +29,7 @@ namespace Boss
 
             if (_transform.position == target)
             {
-                currentWaypoint = (currentWaypoint + 1) % _waypoints.Length;
+                currentWaypoint = Random.Range(0, _waypoints.Length);
             }
 
             state = NodeState.Running;

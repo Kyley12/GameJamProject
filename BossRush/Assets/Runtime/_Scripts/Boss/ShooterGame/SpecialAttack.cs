@@ -5,7 +5,7 @@ namespace Boss
 {
     public class SpecialAttack : Node
     {
-         private Transform _bossTransform;
+        private Transform _bossTransform;
         private Transform _playerTransform;
 
         public SpecialAttack(Transform bossTransform, Transform playerTransform)

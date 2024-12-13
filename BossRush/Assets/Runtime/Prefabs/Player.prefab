@@ -126,6 +126,7 @@ GameObject:
   - component: {fileID: 6985358882830018713}
   - component: {fileID: 8349763856731358294}
   - component: {fileID: 1943663140483981637}
+  - component: {fileID: 7416415027647580515}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -191,7 +192,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 10
   rb: {fileID: 6985358882830018713}
-  gunPosition: {fileID: 4490307677676987973}
 --- !u!65 &1943663140483981637
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -213,3 +213,15 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7416415027647580515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7966823308087829129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8046e5c06e9e4ba4983e052e80c7263d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
