@@ -21,7 +21,7 @@ public class BattleHandler : MonoBehaviour
     {
         Vector3 position;
         Transform currPrefab; 
-        if(isPlayerTeam)
+        if(isPlayerTeam && playerTransform != null)
         {
             position = new Vector3(0, 0, 0);
             currPrefab = playerTransform;
