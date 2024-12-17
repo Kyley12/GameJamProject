@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: ShipMovement
   m_EditorClassIdentifier: 
   centerPoint: {x: 0, y: 1, z: 7}
-  movementRadius: 5
-  moveSpeed: 5
+  movementRadius: 10
+  moveSpeed: 8
   directionChangeInterval: 3

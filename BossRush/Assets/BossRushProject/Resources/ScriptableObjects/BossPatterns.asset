@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: BossPatterns
   m_EditorClassIdentifier: 
   patterns:
-  - bulletsAmount: 10
+  - bulletsAmount: 20
+    fireRate: 0
+    startAngle: 0
+    endAngle: 360
+  - bulletsAmount: 30
     fireRate: 0.1
     startAngle: 0
     endAngle: 360
-  - bulletsAmount: 20
-    fireRate: 0.5
-    startAngle: 0
-    endAngle: 360
-  - bulletsAmount: 10
-    fireRate: 0.5
+  - bulletsAmount: 15
+    fireRate: 0.1
     startAngle: 90
     endAngle: 270

@@ -149,7 +149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
   moveDirection: {x: 0, y: 0, z: 0}
-  moveSpeed: 7
+  moveSpeed: 20
   destroyTime: 3
 --- !u!114 &8184129017998683126
 MonoBehaviour:
@@ -165,3 +165,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerStats: {fileID: 11400000, guid: 665ce33058da9bf499d5d21e356d3eca, type: 2}
   bossStats: {fileID: 11400000, guid: 35e5da52a16056648a9c076f60e99535, type: 2}
+  amIPlayer: 0
+  didWin: 0
+  playerHealth: 0
+  isPlayerShieldOn: 0
+  playerShieldHealth: 0
+  playerDamage: 0
+  bossHealth: 0
+  isBossShieldOn: 0
+  bossShieldHealth: 0
+  bossDamage: 0

@@ -5,9 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerBullet : MonoBehaviour
 {
-    
     public Rigidbody rb;
-    public float moveSpeed;
 
     private void Start()
     {
@@ -23,10 +21,5 @@ public class PlayerBullet : MonoBehaviour
         {
             Destroy(gameObject);
         }
-    }
-
-    private void FixedUpdate()
-    {
-        rb.velocity = transform.forward * moveSpeed;
     }
 }
