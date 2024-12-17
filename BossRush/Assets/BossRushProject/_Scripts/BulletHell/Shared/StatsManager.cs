@@ -122,6 +122,13 @@ public class StatsManager : MonoBehaviour
 
     private void RoundOver()
     {
-        Debug.Log("Round win result: " + didWin);
+        if(didWin)
+        {
+            Debug.Log("Player won this round!");
+        }
+        else if(!didWin)
+        {
+            Debug.Log("Player lost this round!");
+        }
     }
 }

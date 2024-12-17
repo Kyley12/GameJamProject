@@ -9,18 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f433406671a3b3342854cff40326ba23, type: 3}
-  m_Name: BossStats
+  m_Script: {fileID: 11500000, guid: 2ce1cbc9078ad2a49bc5395e5998267f, type: 3}
+  m_Name: Root
   m_EditorClassIdentifier: 
-  generalStatsInfos:
-  - name: Hp
-    value: -400
-    maxValue: 1000
-  - name: Damage
-    value: 40
-    maxValue: 40
-  battleStatsInfos:
-  - name: Shield
-    value: 0
-    maxValue: 1000
-    isOn: 0
+  children:
+  - {fileID: 11400000, guid: fe07bc6f23e43064a8fd8f146ea3d1ea, type: 2}

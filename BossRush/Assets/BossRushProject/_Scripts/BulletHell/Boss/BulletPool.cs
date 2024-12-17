@@ -14,7 +14,14 @@ public class BulletPool : MonoBehaviour
 
     private void Awake()
     {
-        bulletPoolInstance = this;
+        if (bulletPoolInstance == null)
+        {
+            bulletPoolInstance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void Start()
@@ -49,5 +56,19 @@ public class BulletPool : MonoBehaviour
     private void SetUp()
     {
         bullets = new List<GameObject>();
+    }
+
+    public void ClearPool()
+    {
+        for (int i = bullets.Count - 1; i >= 0; i--)
+        {
+            if (bullets[i] != null && !bullets[i].activeInHierarchy)
+            {
+                Destroy(bullets[i]); // Destroy inactive bullets
+                bullets.RemoveAt(i); // Remove from the list
+            }
+        }
+
+        Debug.Log("Inactive bullets cleared from the pool.");
     }
 }
